@@ -4,8 +4,8 @@
 /* 레이아웃 */
 #section1 {position: relative; z-index: 1000; height: 1600px; background: #3366ff; transition: all 1s ease-in-out;}
 #section2 {position: relative; z-index: 900; background: #fff; }
-#section3 {position: relative; height: 38000px; z-index: 800;}
-#section4 {position: relative; height: 3000px;}
+#section3 {position: relative; z-index: 800;}
+#section4 {position: relative; }
 
 /* 메인메뉴 css 효과 */
 .off {opacity: 0;}
@@ -81,7 +81,7 @@
   z-index: 8888;
 }
 .overlay.show {
-opacity: .8;
+opacity: .9;
 visibility: visible;
 height: 100%;
 }
@@ -293,7 +293,7 @@ text-align: center;
 }
 .skill {
     padding: 0 10vh 50vh 0;
-    opacity: 1; 
+    opacity: 0; 
     transition: opacity .35s ease;
 }
 .skill:last-child {padding-bottom: 0;}
@@ -505,15 +505,17 @@ text-align: center;
 }
 .mobile .s2 .apple .mockup {position: relative;}
 .mobile .s2 .apple .mockup .mockup-wrap {
-    position: absolute; border-radius: 40px;
-    width: 15vw;
-    left: 19.5vw;
-    top: 18vh;
-    width: 265px; height: 540px; background: #000; overflow: hidden;}
-.mobile .s2 .apple .mockup img {position: absolute;}
-.mobile .s2 .apple .mockup img:nth-child(1){
-    
+    position: absolute;
+    border-radius: 40px;
+    left: 20vw;
+    top: 19vh;
+    width: 280px;
+    height: 610px;
+    background: #000;
+    overflow: hidden;
 }
+.mobile .s2 .apple .mockup img {position: absolute;}
+.mobile .s2 .apple .mockup img:nth-child(1){}
 .mobile .s2 .apple .mockup img:nth-child(2){
     top: 15vh;
     left: -10vw;
@@ -546,7 +548,7 @@ text-align: center;
     display: block;
     padding: 10px;
 }
-
+/* nike */
 .mobile .s2 .nike {
     width: 200vw;
     height: 100vh;
@@ -554,10 +556,21 @@ text-align: center;
     float: left;
 }
 .mobile .s2 .nike .mockup {position: relative;}
+.mobile .s2 .nike .mockup .mockup-wrap {
+    position: absolute;
+    border-radius: 40px;
+    left: 20vw;
+    top: 18vh;
+    width: 280px;
+    height: 610px;
+    background: #000;
+    overflow: hidden;
+}
 .mobile .s2 .nike .mockup img {position: absolute;}
 .mobile .s2 .nike .mockup img:nth-child(1){
     width: 15vw;
-    left: 19.6vw;
+    left: -0.4vw;
+    top: 0.5vh;
 }
 .mobile .s2 .nike .mockup img:nth-child(2){
     top: 14vh;
