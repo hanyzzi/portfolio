@@ -4,6 +4,9 @@
 $('#overlay').toggleClass("show");
 });
 
+
+
+
  var all = $(".overlay-menu li a")
  var home = $(".overlay-menu .menu1 a")
  var about = $(".overlay-menu .menu2 a")
@@ -11,9 +14,15 @@ $('#overlay').toggleClass("show");
  var contact = $(".overlay-menu .menu4 a")
  var overlay = $(".overlay")
 
+all.click(function(){
+    $(overlay).removeClass("show");
+    $('#toggle').removeClass("active");
+});
+
  home.mouseover(function(){
     $(all).css("color","#3366ff")
     $(overlay).addClass("white");
+    
  });
  home.mouseout(function(){
     $(all).css("color","#fff")
