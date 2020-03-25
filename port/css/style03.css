@@ -631,7 +631,7 @@ text-align: center;
     left: -10%;
     width: 120%;
 }
-/* modal */
+/* modal 
 #modal {
     transform: scale(0);
     position: fixed; left: 0; top: 0;
@@ -703,6 +703,7 @@ text-align: center;
     0% {transform: scale(1);}
     100% {transform: scale(0);}
 }
+*/
  
 /* nike */
 .mobile .s2 .nike {
