@@ -399,8 +399,8 @@
 								<h2>Apple music</h2>
 								<p>
 									피그마를 이용하여 레이아웃을 만들고 스와이프를 사용하여 슬라이드 효과를 주었습니다.</p>
-								<div class="btn">
-									<a href="http://roymom.dothome.co.kr/apple/apple01.html" target="_blank">VIEW</a>
+								<div class="mobileBtn">
+									<a href="#">VIEW</a>
 								</div>
 							</div>
 						</div>
@@ -418,8 +418,8 @@
 								<h2>nike mobile</h2>
 								<p>
 									피그마를 이용하여 레이아웃을 만들고 스와이프를 사용하여 슬라이드 효과를 주었습니다.</p>
-								<div class="btn">
-									<a href="http://roymom2.dothome.co.kr/nike/index.html" target="_blank">VIEW</a>
+								<div class="mobileBtn">
+									<a href="#">VIEW</a>
 								</div>
 							</div>
 						</div>
@@ -453,7 +453,7 @@
 					<div class="item pic"></div>
 					<div class="item pic"></div>
 					<div class="item pic"></div>
-					<div class="item pic"></div>
+					<div class="item pic"></div>s
 					<div class="item pic"></div>
 					<div class="item pic"></div>
 					<div class="item pic"></div>
@@ -498,7 +498,7 @@
 <script>
 	$(".btn-wrap .btn").click(function(){
 	$("#modal").removeClass().addClass("one");
-});
+	});
 
 	$(".close").click(function(){
 		$("#modal").addClass("out");
@@ -619,6 +619,16 @@
         }
 
     });
+
+    //mobileBtn window popup
+	$(".mobileBtn").eq(0).click(function(e){
+        e.preventDefault();
+        window.open("../apple/apple01.html","appleSite","width=500, height=937, left=50, top=50, scrollbars=0, toolbar=0, menubar=0");
+	});
+	$(".mobileBtn").eq(1).click(function(e){
+        e.preventDefault();
+        window.open("../nike/index.html","nikeSite","width=500, height=937, left=50, top=50, scrollbars=0, toolbar=0, menubar=0");
+	});
 
    
 </script>
