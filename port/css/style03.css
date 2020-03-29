@@ -730,17 +730,17 @@ text-align: center;
 .mobile .s2 .apple .mockup {position: relative;}
 .mobile .s2 .apple .mockup .mockup-wrap {
     position: absolute;
-    border-radius: 25px;
-    left: 16.5vw;
-    top: 20vh;
+    border-radius: 1vw;
+    left: 17vw;
+    top: 19vh;
     width: 16vw;
-    height: 69vh;
+    height:100vh;
     overflow: hidden;
 }
 .apple .mockup .mockup-wrap img {}
-.mobile .s2 .apple .mockup img {position: absolute;}
+.mobile .s2 .apple .mockup img {position: absolute; border-radius: 1vw;}
 .mobile .s2 .apple .mockup img:nth-child(2){
-    width: 80%;
+    width: 80vw;
     top: 15vh;
     left: -15vw;    
 }
@@ -799,19 +799,19 @@ text-align: center;
 .mobile .s2 .nike .mockup {position: relative;}
 .mobile .s2 .nike .mockup .mockup-wrap {
     position: absolute;
-    border-radius: 25px;
+    border-radius: 1vw;
     left: 16.5vw;
-    top: 20vh;
+    top: 19vh;
     width: 16vw;
-    height: 69vh;
+    height:100vh;
     overflow: hidden;
 }
-.mobile .s2 .nike .mockup img {position: absolute;}
+.mobile .s2 .nike .mockup img {position: absolute; border-radius: 1vw;}
 .mobile .s2 .nike .mockup img:nth-child(1){
     width: 16vw;
 }
 .mobile .s2 .nike .mockup img:nth-child(2){
-    width: 40%;
+    width: 80vw;
     top: 15vh;
     left: -15vw;
 }
@@ -1034,27 +1034,11 @@ text-align: center;
 
 
 /* 미디어쿼리 */
-@media (max-width: 1500px){
-    .mobile .s2 .apple .mockup .mockup-wrap {top:18.5vh;}
-    .mobile .s2 .nike .mockup .mockup-wrap {top:18.5vh;}
-   
-    }
-@media (max-width: 1300px){
-    .mobile .s2 .apple .mockup .mockup-wrap { left: 17vw;
-    top: 18vh;}    
-    .mobile .s2 .nike .mockup .mockup-wrap { left: 17vw;
-    top: 18vh;}    
-}
-@media (max-width: 1200px){
-     .mobile .s2 .apple .mockup .mockup-wrap{top: 17.5vh;}
-     .mobile .s2 .nike .mockup .mockup-wrap{top: 17.5vh;}
-}
 @media (max-width: 1024px){
     .text {font-size: 1.5vw; line-height: 1.5vw;}
     .pic { width: 20%;}
     .mobile .s2 .apple .mockup .mockup-wrap{top: 17vh;}
     .mobile .s2 .nike .mockup .mockup-wrap{top: 17vh;}
-    
 }
 
 @media (max-width: 960px){
