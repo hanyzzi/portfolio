@@ -51,7 +51,18 @@
             </ul>
       </nav>
     </div>
-    <!-- //고정메뉴 -->
+	<!-- //고정메뉴 -->
+	
+	<!-- 마우스 -->
+	<div id="scrollDown">
+		<div id="mouse">
+			<div id="wheel"></div>
+			<div class="scroll1"></div>
+			<div class="scroll2"></div>
+			<div class="scroll3"></div>
+		</div>
+	</div>	
+	<!-- //마우스 -->
 
 	<!-- 컨텐츠 시작 -->
 	<div id="contents">
@@ -82,10 +93,7 @@
                 </div>
                 
                 <div class="sec2_1" >
-                    <div class="aimg"
-						data-3000="opacity:0;"
-						data-3200="opacity:1;"
-					>
+                    <div class="aimg">
                         <img src="img/main02.jpg" alt="메인사진">
 						<div class="bg"
 						data-3600="top:100%;"
@@ -667,6 +675,18 @@
         let atit = $(".sec2_1 .atit").offset().top;
        
         $(".scroll").text(wScroll);
+
+		//scrollDown mouse
+		if(wScroll >= 800){
+			$("#mouse").css("border","2px solid #3366ff");
+			$("#wheel").css("background-color","#3366ff");
+			$("#mouse .scroll1").css("border-top","5px solid #3366ff");
+			$("#mouse .scroll2").css("border-top","5px solid #3366ff");
+			$("#mouse .scroll3").css("border-top","5px solid #3366ff");
+		} 
+		if(wScroll >= 3000){
+			$("#mouse").css("display","none");
+		}
 		
        //main text fixed
         if(wScroll >= 1000 ){
@@ -715,10 +735,7 @@
         if(wScroll >= text1 - $(window).height()/2){
             $(".atit .text1 .t1").addClass("up");
         }
-         if(wScroll >= text2- $(window).height()/2){
-            $(".text2_1").addClass("show");
-        }
-        
+
         //section3 fixed
         if( wScroll >= $("#section3").offset().top ){
             $("#section3 .sec3").addClass("pos");
