@@ -1,0 +1,364 @@
+@charset "utf-8";
+body, html{overflow: visible !important;}
+
+/* 스킵 내비게이션 */
+#skip {position: relative;}
+#skip a {position: absolute; left: 0px; top: -35px; border: 1px solid #fff; color:#fff; background: #333; line-height: 30px; width: 150px; text-align: center; }
+#skip a:active,
+#skip a:focus{top: 0;}
+
+/* layout */
+#main {}
+#about {}
+#work {}
+#animation {}
+#mobile {}
+#contact {}
+
+/* container */
+.container {width: 1000px; margin: 0 auto;}
+
+/* scroll */
+.scroll {
+    position: fixed; 
+    left: 10px; top: 10px; 
+    width: 40px; height: 40px; 
+    line-height: 40px; 
+    text-align: center; 
+    background: rgba(255,255,255,0.4); 
+    color: #000; z-index: 9999;
+}
+
+/* main */
+.main {
+    height: 100vh; background: #3366ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main h1 {
+    font-size: 5vw; line-height: 5vw; 
+    color: #fff; font-family:'Playfair Display',serif; 
+}
+
+/* about */
+.about {}
+.about .about-menu {height: 100vh; background: #fff; position: relative;}
+.about-menu .menu-text {
+    display: flex; 
+    justify-content: space-between;
+    position: absolute; 
+    left: 50%; top: 50%;
+    width: 90%; margin: 0 auto; 
+    transform: translate(-50%,-50%);   
+}
+.about-menu .menu-text span{
+    color: #3366ff; 
+    font-size: 12vw; line-height: 14vw;
+    font-family: 'Bebas Neue', cursive; 
+}
+.about .about-img {}
+.about .about-text {}
+.about-text .t1 {
+    height: 100vh;
+    background: #3366ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-text .t1 span {
+    color: #fff;
+    font-size: 3vw;
+}
+.about-text .t2 {
+    height: 100vh;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-text .t2 span {
+    font-size: 2vw;
+    display: inline-block;
+    padding-bottom: 1vh;
+}
+.about-text .t2 strong {font-size: 3vw; }
+.about-text .t2 .mark {
+    font-family: 'Nanum Myeongjo';
+    color: #3366ff;
+    font-size: 8vw;
+}    
+.about-text .t2 li:last-child {padding-top: 6vh;}
+
+/* skill_wrap */
+.skill_wrap {
+    background: linear-gradient(to bottom, #fff 0%, #fcc5e4 10%, #fda34b 30%, #ff7882 45%, #c8699e 60%, #7046aa 71%, #0c1db8 87%, #1a1a1a 100%);
+    text-align: center;
+    padding: 25vh 0;
+}
+.skill_wrap .skills .skill span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5vw;
+    display: inline-block;
+    padding-bottom: 5vh;
+    color: #fff;
+}    
+.skill strong {
+    opacity: .3;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 100;
+    letter-spacing: -0.5vw;
+}
+.skill strong:after {
+    content: '%';
+    font-size: 3vw;
+}
+
+/* work */
+.work {}
+.work .work-menu {height: 100vh; background: #1a1a1a; position: relative;}
+.work-menu .menu-text {
+    display: flex; 
+    justify-content: space-between;
+    position: absolute; 
+    left: 50%; top: 50%;
+    width: 90%; margin: 0 auto; 
+    transform: translate(-50%,-50%);   
+}
+.work-menu .menu-text span{
+    color: #00ff33; 
+    font-size: 12vw; line-height: 14vw;
+    font-family: 'Bebas Neue', cursive; 
+}
+/* work-site */
+.work-site {}
+
+/* s1 */
+.work-site .s1 {
+    background: #1a1a1a;
+    position: relative;
+    color: #fff;
+    height: 100vh;
+}
+.work-site .s1 .title {
+    padding: 3vw 0 0 6vw;
+    position: relative;
+}
+.work-site .s1 .title::before{
+    content: '01';
+    position: absolute;
+    top: 0;
+    left: 4vw;
+    font-size: 25vw;
+    line-height: 20vw;
+    font-family: 'Bebas Neue', cursive;
+    opacity: .1;
+}
+.work-site .s1 .title span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vw;
+}
+.work-site .s1 .mockup {
+    float: left;
+    width: 50%;
+}
+.work-site .s1 .num {
+    font-size: 16vw;
+    position: absolute;
+    opacity: .5;
+}
+.work-site .s1 .text {
+    float: right;
+    width: 40%;
+    padding-right: 5%;
+    padding-top: 10%;
+}
+.s1 .text .subtitle {margin-bottom: 3vh;}
+.s1 .text .subtitle span {font-size: 1.5vw;}
+.s1 .text .btn {
+    border: 1px solid #fff;
+    text-align: center;
+}
+.s1 .text .btn a {
+    padding: 2vw;
+    display: block;
+    color: #fff;
+}
+/* s2 */
+.work-site .s2 {
+    background: #1a1a1a;
+    position: relative;
+    color: #fff;
+    height: 100vh;
+}
+.work-site .s2 .title {
+    padding: 3vw 0 0 6vw;
+    position: relative;
+    padding-left: 56vw;
+}
+.work-site .s2 .title::before{
+    content: '02';
+    position: absolute;
+    top: 0;
+    left: 4vw;
+    font-size: 25vw;
+    line-height: 20vw;
+    font-family: 'Bebas Neue', cursive;
+    opacity: .1;
+    padding-left: 70vw;
+}
+.work-site .s2 .title span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vw;
+}
+.work-site .s2 .mockup {
+    float: right;
+    width: 50%;
+}
+.work-site .s2 .num {
+    font-size: 16vw;
+    position: absolute;
+    opacity: .5;
+}
+.work-site .s2 .text {
+    float: left;
+    width: 40%;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.s2 .text .subtitle {margin-bottom: 3vh;}
+.s2 .text .subtitle span {font-size: 1.5vw;}
+.s2 .text .btn {
+    border: 1px solid #fff;
+    text-align: center;
+}
+.s2 .text .btn a {
+    padding: 2vw;
+    display: block;
+    color: #fff;
+}
+/* s3 */
+.work-site .s3 {
+    background: #1a1a1a;
+    position: relative;
+    color: #fff;
+    height: 100vh;
+}
+.work-site .s3 .title {
+    padding: 3vw 0 0 6vw;
+    position: relative;
+}
+.work-site .s3 .title::before{
+    content: '03';
+    position: absolute;
+    top: 0;
+    left: 4vw;
+    font-size: 25vw;
+    line-height: 20vw;
+    font-family: 'Bebas Neue', cursive;
+    opacity: .1;
+}
+.work-site .s3 .title span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vw;
+}
+.work-site .s3 .mockup {
+    float: left;
+    width: 50%;
+}
+.work-site .s3 .num {
+    font-size: 16vw;
+    position: absolute;
+    opacity: .5;
+}
+.work-site .s3 .text {
+    float: right;
+    width: 40%;
+    padding-right: 5%;
+    padding-top: 10%;
+}
+.s3 .text .subtitle {margin-bottom: 3vh;}
+.s3 .text .subtitle span {font-size: 1.5vw;}
+.s3 .text .btn {
+    border: 1px solid #fff;
+    text-align: center;
+}
+.s3 .text .btn a {
+    padding: 2vw;
+    display: block;
+    color: #fff;
+}
+/* s4 */
+.work-site .s4 {
+    background: #1a1a1a;
+    position: relative;
+    color: #fff;
+    height: 100vh;
+}
+.work-site .s4 .title {
+    padding: 3vw 0 0 6vw;
+    position: relative;
+    padding-left: 56vw;
+}
+.work-site .s4 .title::before{
+    content: '04';
+    position: absolute;
+    top: 0;
+    left: 4vw;
+    font-size: 25vw;
+    line-height: 20vw;
+    font-family: 'Bebas Neue', cursive;
+    opacity: .1;
+    padding-left: 70vw;
+}
+.work-site .s4 .title span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vw;
+}
+.work-site .s4 .mockup {
+    float: right;
+    width: 50%;
+}
+.work-site .s4 .num {
+    font-size: 16vw;
+    position: absolute;
+    opacity: .5;
+}
+.work-site .s4 .text {
+    float: left;
+    width: 40%;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.s4 .text .subtitle {margin-bottom: 3vh;}
+.s4 .text .subtitle span {font-size: 1.5vw;}
+.s4 .text .btn {
+    border: 1px solid #fff;
+    text-align: center;
+}
+.s4 .text .btn a {
+    padding: 2vw;
+    display: block;
+    color: #fff;
+}
+
+
+
+
+
+/* mediaquery*/
+@media (max-width: 1020px) {
+    .container {width: 100%;}
+}
+@media (max-width: 768px) {
+    .work-site .s1 {height: 50vh;}
+    .work-site .s2 {height: 50vh;}
+    .work-site .s3 {height: 50vh;}
+    .work-site .s4 {height: 50vh;}
+}
+@media (max-width: 480px) {
+    .about-text .t1 {height: 50vh;}
+    .about-text .t2 {height: 50vh;}
+}
