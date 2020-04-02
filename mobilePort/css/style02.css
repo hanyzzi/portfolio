@@ -1,5 +1,6 @@
 @charset "utf-8";
 body, html{overflow: visible !important;}
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 /* 스킵 내비게이션 */
 #skip {position: relative;}
@@ -39,9 +40,6 @@ body, html{overflow: visible !important;}
 .main h1 {
     font-size: 5vw; line-height: 5vw; 
     color: #fff; font-family: 'Do Hyeon', sans-serif;
-    position: fixed;
-    left: 50%;
-    top: 50%;
 }
 .typing {
     width: 40%;
@@ -101,6 +99,7 @@ body, html{overflow: visible !important;}
 .about-text .t1 span {
     color: #fff;
     font-size: 3vw;
+    font-family: 'S-CoreDream-3Light';
 }
 .about-text .t2 {
     height: 100vh;
@@ -112,6 +111,7 @@ body, html{overflow: visible !important;}
     transform: translateY(5vh);
     transition: all 1s ease-in-out;
     opacity: 0;
+    font-family: 'S-CoreDream-3Light';
 }
 .about-text .t2.up {
     transform: translateY(0);
@@ -181,10 +181,8 @@ body, html{overflow: visible !important;}
     height: 100vh;
     opacity: 0;
     transition: all 1s ease-in-out;
-    transform: translateX(-100vw);
 }
 .work-site .s1.show {
-    transform: translateX(0);
     opacity: 1;
 }
 .work-site .s1 .title {
@@ -219,6 +217,7 @@ body, html{overflow: visible !important;}
     width: 40%;
     padding-right: 5%;
     padding-top: 10%;
+    font-family: 'S-CoreDream-3Light';
 }
 .s1 .text .subtitle {margin-bottom: 3vh;}
 .s1 .text .subtitle span {font-size: 2vw;}
@@ -238,10 +237,8 @@ body, html{overflow: visible !important;}
     height: 100vh;
     opacity: 0;
     transition: all 1s ease-in-out;
-    transform: translateX(100vw);
 }
 .work-site .s2.show {
-    transform: translateX(0);
     opacity: 1;
 }
 .work-site .s2 .title {
@@ -278,6 +275,7 @@ body, html{overflow: visible !important;}
     width: 40%;
     padding-left: 5%;
     padding-top: 10%;
+    font-family: 'S-CoreDream-3Light';
 }
 .s2 .text .subtitle {margin-bottom: 3vh;}
 .s2 .text .subtitle span {font-size: 2vw;}
@@ -297,10 +295,8 @@ body, html{overflow: visible !important;}
     height: 100vh;
     opacity: 0;
     transition: all 1s ease-in-out;
-    transform: translateX(-100vw);
 }
 .work-site .s3.show {
-    transform: translateX(0);
     opacity: 1;
 }
 .work-site .s3 .title {
@@ -335,6 +331,7 @@ body, html{overflow: visible !important;}
     width: 40%;
     padding-right: 5%;
     padding-top: 10%;
+    font-family: 'S-CoreDream-3Light';
 }
 .s3 .text .subtitle {margin-bottom: 3vh;}
 .s3 .text .subtitle span {font-size: 2vw;}
@@ -354,10 +351,8 @@ body, html{overflow: visible !important;}
     height: 100vh;
     opacity: 0;
     transition: all 1s ease-in-out;
-    transform: translateX(100vw);
 }
 .work-site .s4.show {
-    transform: translateX(0);
     opacity: 1;
 }
 .work-site .s4 .title {
@@ -394,6 +389,7 @@ body, html{overflow: visible !important;}
     width: 40%;
     padding-left: 5%;
     padding-top: 10%;
+    font-family: 'S-CoreDream-3Light';
 }
 .s4 .text .subtitle {margin-bottom: 3vh;}
 .s4 .text .subtitle span {font-size: 2vw;}
@@ -726,16 +722,7 @@ svg text {
     height: 50%;
 }
 .apple .s1 .mockup img {position: relative;}
-.apple .s1 .mockup .mockup-wrap{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    border-radius: 5%;
-    overflow: hidden;
-}
-.apple .text {margin-top: 3vh;}
+.apple .text {margin-top: 3vh; font-family: 'S-CoreDream-3Light';}
 
 /* nike */
 .mobile-site .nike {
@@ -771,16 +758,7 @@ svg text {
     height: 50%;
 }
 .nike .s1 .mockup img {position: relative;}
-.nike .s1 .mockup .mockup-wrap{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    border-radius: 5%;
-    overflow: hidden;
-}
-.nike .text {margin-top: 3vh;}
+.nike .text {margin-top: 3vh; font-family: 'S-CoreDream-3Light';}
  
 /* contact */
 .contact {}
