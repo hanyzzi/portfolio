@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/swiper.css">
 
     <!-- wen font-->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -38,7 +38,10 @@
     <section id="main">
         <div class="container">
             <div class="main">
-                <h1>Hanhee's Portfolio</h1>
+                <h1 class="typing"
+                 data-0 = "transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity:1; "
+            data-500 = "transform: translate(-50%, -50%) scale(2) rotate(180deg); opacity:0;"
+                >Hanhee's Portfolio</h1>
             </div>
         </div>
     </section><!--//main-->
@@ -48,7 +51,7 @@
             <div class="about">
                 <div class="about-menu">
                     <div class="menu-text">
-                        <span class="about">About</span>
+                        <span class="ab">About</span>
                         <span class="opc1">Work</span>
                         <span class="opc1">Contact</span>
                     </div>
@@ -119,7 +122,7 @@
                 <div class="work-menu">
                     <div class="menu-text">
                         <span class="opc2">About</span>
-                        <span class="Work">Work</span>
+                        <span class="wo">Work</span>
                         <span class="opc2">Contact</span>
                     </div>
                 </div><!--work-menu-->
@@ -356,7 +359,7 @@
                     <div class="menu-text">
                         <span class="opc3">About</span>
                         <span class="opc3">Work</span>
-                        <span class="contact">Contact</span>
+                        <span class="co">Contact</span>
                     </div>
                 </div><!--//Contact-menu-->
                 <div class="insta">
@@ -369,15 +372,15 @@
                         <div class="follow">
                             <ul>
                                 <li>
-                                    <span><strong>13</strong></span>
+                                    <span><strong>010</strong></span>
                                     <span>게시글</span>
                                 </li>
                                 <li>
-                                    <span><strong>13</strong></span>
+                                    <span><strong>2846</strong></span>
                                     <span>팔로워</span>
                                 </li>
                                 <li>
-                                    <span><strong>13</strong></span>
+                                    <span><strong>6769</strong></span>
                                     <span>팔로잉</span>
                                 </li>
                             </ul>
@@ -386,16 +389,19 @@
                     <article class="infor">
                         <div class="text">
                             <span><strong>최한희</strong></span>
-                            <span>코딩과 사랑에 빠진 신입 웹퍼블리셔 최한희 입니다.</span>
+                            <span>fall in love with coding</span>
                             <span>아래 '팔로우' 를 눌러주세요!</span>
                         </div>
                         <div class="follow-btn">
                             <a href="#">팔로우</a>
                         </div>
+                        <div class="follow-btn2">
+                            <a href="#">팔로잉</a>
+                        </div>
                     </article>
                     <article class="contents">
                          <ul class="clearfix"> 
-                             <li class="tab1 active">
+                             <li class="tab active">
                                 <a href="#" class="icon">
                                     <img src="img/icon1.png" alt="icon1">
                                 </a>
@@ -447,12 +453,65 @@
                                     </li>
                                 </ul>
                              </li>
-                             <li class="tab2">
+                             <li class="tab">
                                 <a href="#" class="icon">
-                                    <img src="img/icon2.png" alt="icon1">
+                                    <img src="img/icon2.png" alt="icon1" style="width: 66%;">
                                 </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back01.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back02.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back03.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back04.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back05.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back06.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back08.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back09.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/back10.jpg" alt="문구">
+                                        </a>
+                                    </li>
+                                </ul>
                              </li>
                          </ul>
+                    </article>
+                    <article class="private">
+                        <div class="lock">
+                            <span><strong>비공개 계정입니다</strong></span>
+                            <span>사진과 동영상을 보려면 계정을 팔로우하세요.</span>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -465,11 +524,11 @@
     <script src="js/count.js"></script>
 
     <script>
-        var windowSize = window.outerWidth;
-        if(windowSize > 1000){
-        alert("현재 작업 중인 모바일용 포트폴리오입니다. 모바일로 보시는 것을 권장드립니다!");
-         }
-       
+        //var windowSize = window.outerWidth;
+       // if(windowSize > 1000){
+       //      alert("모바일용 포트폴리오입니다. 1000px 이하로 보시는 것을 //추천드립니다.");
+       // }
+
     //skrollr
         var s = skrollr.init({
             edgeStrategy: 'set',
@@ -478,9 +537,121 @@
 
     //scroll
         $(window).scroll(function(){
-        let wScroll = $(this).scrollTop();
-        $(".scroll").text(wScroll);
+            let wScroll = $(this).scrollTop();
+            let aboutMenu = $(".about .about-menu").offset().top;
+            let aboutT1 = $(".about-text .t1").offset().top;
+            let aboutT2 = $(".about-text .t2").offset().top;
+            let workMenu = $(".work .work-menu").offset().top;
+            let wsS1 = $(".work-site .s1").offset().top - $(window).height()/2;
+            let wsS2 = $(".work-site .s2").offset().top - $(window).height()/2;
+            let wsS3 = $(".work-site .s3").offset().top - $(window).height()/2;
+            let wsS4 = $(".work-site .s4").offset().top - $(window).height()/2;
+            let animation = $(".animation").offset().top - $(window).height()/2;
+            let apple = $(".mobile-site .apple").offset().top
+            let nike = $(".mobile-site .nike").offset().top - $(window).height()/2;
+            let contactMenu = $(".contact .contact-menu").offset().top;
+
+            $(".scroll").text(wScroll);
+
+            //about menu
+            if(wScroll >= aboutMenu){
+                $(".opc1").addClass("off");
+                 $(".ab").addClass("right");
+            } else if(wScroll < aboutMenu){
+                $(".opc1").removeClass("off");
+                $(".ab").removeClass("right");
+            }
+            //.about-text .t1 
+            if(wScroll >= aboutT1){
+                $(".about-text .t1 ul").addClass("up");
+            }
+            //.about-text .t2
+            if(wScroll >= aboutT2){
+                $(".about-text .t2").addClass("up");
+            }
+
+            //workMenu
+            if(wScroll >= workMenu){
+                $(".opc2").addClass("off");
+                 $(".wo").addClass("center");
+            } else if(wScroll < workMenu){
+                $(".opc2").removeClass("off");
+                $(".wo").removeClass("center");
+            }
+            //worksite S1
+            if(wScroll >= wsS1){
+                $(".work-site .s1").addClass("show");
+            }
+            //worksite S2
+            if(wScroll >= wsS2){
+                $(".work-site .s2").addClass("show");
+            }
+            //worksite S3
+            if(wScroll >= wsS3){
+                $(".work-site .s3").addClass("show");
+            }
+            //worksite S4
+            if(wScroll >= wsS4){
+                $(".work-site .s4").addClass("show");
+            }
+
+            //animation
+            if(wScroll >= animation ){
+                $(".animation .ani-menu").addClass("move");
+            }
+
+            //mobile
+            if(wScroll >= apple){
+                $(".apple .title").addClass("show");
+            }
+            if(wScroll >= nike){
+                $(".nike .title").addClass("show");
+            }
+
+            //contact menu
+            if(wScroll >= contactMenu){
+                $(".opc3").addClass("off");
+                 $(".co").addClass("left");
+            } else if(wScroll < contactMenu){
+                $(".opc3").removeClass("off");
+                $(".co").removeClass("left");
+            }
+
+
         });
+
+    //인스타 팔로우 클릭
+    $(".follow-btn a").click(function(e){
+        e.preventDefault();
+        $(".insta .header .follow").css("color","#000");
+        $(".private").css("display","none");
+        $(".follow-btn").css("display","none");
+        $(".follow-btn2").css("display","block");
+    });
+    $(".follow-btn2 a").click(function(e){
+        e.preventDefault();
+        $(".insta .header .follow").css("color","#ccc");
+        $(".private").css("display","block");
+        $(".follow-btn2").css("display","none");
+        $(".follow-btn").css("display","block");
+    });
+
+    //인스타 탭메뉴
+    var tabBtn = $(" .contents > ul > li ");
+    var tabCont = $(" .contents > ul > li > ul ");
+
+    tabCont.hide().eq(0).show();
+
+    tabBtn.click(function(e){
+        e.preventDefault();
+        var target = $(this);
+        var index = target.index();
+        
+        tabBtn.removeClass("active");
+        target.addClass("active");
+        tabCont.css("display","none");
+        tabCont.eq(index).css("display","block");
+    });
 
     //toggle
         $('.toggle').click(function(){
