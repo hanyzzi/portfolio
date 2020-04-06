@@ -294,7 +294,7 @@ text-align: center;
     color: #3366ff; 
     font-size: 12vw; line-height: 14vw;
     font-family: 'Bebas Neue', cursive; 
-    transition: all 1s ease-in-out;
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .tit span:nth-child(3) {margin-right: 0%;}
 .tit span::after {
