@@ -302,7 +302,7 @@ text-align: center;
 .tit span:nth-child(2)::after {content: '02';}
 .tit span:nth-child(3)::after {content: '03';}
 
-.sec2_1 {padding-top: 200vh;}
+.sec2_1 {padding-top: 250vh;}
 .sec2_1 .aimg {
     position: relative;
     transition: all .35s ease-in-out;
